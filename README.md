@@ -1,6 +1,6 @@
 # termplan
 
-![ci](../../actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/rangy-vs/termplan/actions/workflows/ci.yml/badge.svg)
 
 A prerequisite-aware **term-by-term course planner**. Describe your program's courses, prerequisites, and when each is offered; it produces a schedule that respects all of it and tells you the theoretical minimum number of terms.
 
