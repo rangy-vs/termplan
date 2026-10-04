@@ -1,0 +1,20 @@
+# FICTIONAL catalog for demonstration. Replace with your own program's requirements
+# (check your real catalog / advisor: this tool does not know any school's actual rules).
+terms: [Fall, Winter, Spring]
+start: Fall 2026
+max_units: 15
+completed: [MATH 1A]
+targets: [CE 400, CE 301, CS 250, CE 350]
+
+courses:
+  MATH 1A: {units: 5, title: Calculus I}
+  MATH 1B: {units: 5, prereq: [MATH 1A], title: Calculus II}
+  MATH 2:  {units: 5, prereq: [MATH 1B], offered: [Fall, Spring], title: Linear Algebra}
+  CS 101:  {units: 5, title: Intro Programming}
+  CS 102:  {units: 5, prereq: [CS 101], title: Data Structures}
+  CS 201:  {units: 5, prereq: [CS 102, [MATH 1B, MATH 2]], offered: [Winter, Spring], title: Algorithms}
+  CS 250:  {units: 5, prereq: [CS 102], offered: [Spring], title: Software Engineering}
+  CE 210:  {units: 5, prereq: [CS 101], title: Digital Logic}
+  CE 301:  {units: 5, prereq: [CE 210, CS 102], offered: [Fall, Winter], title: Computer Architecture}
+  CE 350:  {units: 5, prereq: [CE 301], offered: [Spring], title: Embedded Systems}
+  CE 400:  {units: 5, prereq: [CE 350, CS 201], offered: [Fall], title: Capstone}
